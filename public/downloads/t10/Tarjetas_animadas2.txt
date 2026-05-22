@@ -1,0 +1,57 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    .row.mb-4
+      .col-sm-6.col-xl-3.mb-4.mb-xl-0
+        .tarjeta.tarjeta-flip.color-primario
+          .tarjeta-flip__contenedor
+            .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tarjetas/avatar.svg')})`}")
+            .tarjeta-flip__contenido.p-4
+              h4 John Doe
+              p.mb-0 Lorem ipsum dolor sit amet, 
+
+      .col-sm-6.col-xl-3.mb-4.mb-xl-0
+        .tarjeta.tarjeta-flip.color-secundario(@mouseover="indicadorTarjetaFlip = false")
+          .indicador--hover(v-if="indicadorTarjetaFlip")
+          .tarjeta-flip__contenedor
+            .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tarjetas/avatar.svg')})`}")
+            .tarjeta-flip__contenido.p-4
+              h4 John Doe
+              p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
+      .col-sm-6.col-xl-3.mb-4.mb-sm-0
+        .tarjeta.tarjeta-flip.color-acento-contenido
+          .tarjeta-flip__contenedor
+            .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tarjetas/avatar.svg')})`}")
+            .tarjeta-flip__contenido.p-4
+              h4 John Doe
+              p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
+      .col-sm-6.col-xl-3
+        .tarjeta.tarjeta-flip.color-acento-botones
+          .tarjeta-flip__contenedor
+            .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tarjetas/avatar.svg')})`}")
+            .tarjeta-flip__contenido.p-4
+              h4 John Doe
+              p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({
+    indicadorTarjetaFlip: true,
+  }),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>

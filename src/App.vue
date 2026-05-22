@@ -12,9 +12,6 @@
 <script>
 export default {
   name: 'App',
-  data: () => ({
-    menuOpen: false,
-  }),
   computed: {
     menuState() {
       return this.$store.getters.isMenuOpen

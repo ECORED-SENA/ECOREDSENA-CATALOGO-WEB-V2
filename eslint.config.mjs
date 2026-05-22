@@ -5,14 +5,7 @@ import * as parserVue from 'vue-eslint-parser'
 import globals from 'globals'
 
 export default [
-  {
-    ignores: [
-      'dist/',
-      'node_modules/',
-      '**/node_modules/',
-      'eslint.config.mjs',
-    ],
-  },
+  { ignores: ['dist/', 'node_modules/', '**/node_modules/', 'eslint.config.mjs'] },
   js.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
   {

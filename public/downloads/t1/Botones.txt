@@ -1,0 +1,57 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    .row.mb-3
+        a.boton.me-3.indicador__container(
+          :href="obtenerLink('/downloads/prueba.pdf')"
+          target="_blank"
+          type="application/pdf"
+          @mouseover="mostrarIndicador = false")
+          span Descargar
+          i.fas.fa-file-download
+          .indicador--click(v-if="mostrarIndicador")
+      .mb-3
+        a.boton.color-primario.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+        a.boton.color-secundario.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+        a.boton.color-acento-contenido.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+        a.boton.color-acento-botones.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+      div
+        a.boton--sm.color-primario.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+        a.boton--sm.color-secundario.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+        a.boton--sm.color-acento-contenido.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+        a.boton--sm.color-acento-botones.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+          
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({}),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>

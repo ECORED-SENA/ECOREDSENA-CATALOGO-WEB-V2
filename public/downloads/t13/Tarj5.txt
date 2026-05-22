@@ -1,0 +1,70 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    .row.justify-content-center.mb-4
+      .col-lg-4
+        .tarjetas-up__content.p-4.d-flex.align-items-center(@mouseover="mostrarIndicador = false")
+          .indicador--hover(v-if="mostrarIndicador")
+          .tarjetas-up__content__image: img(src='@/assets/curso/temas/ejm.png')
+          .text-center.p-lg-4
+            h5 Tarjeta 1
+            p.mb-0 This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      .col-lg-4
+        .tarjetas-up__content.p-4.d-flex.align-items-center
+          .tarjetas-up__content__image: img(src='@/assets/curso/temas/ejm.png')
+          .text-center.p-lg-4
+            h5 Tarjeta 2
+            p.mb-0 This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      .col-lg-4
+        .tarjetas-up__content.p-4.d-flex.align-items-center
+          .tarjetas-up__content__image: img(src='@/assets/curso/temas/ejm.png')
+          .text-center.p-lg-4
+            h5 Tarjeta 3
+            p.mb-0 This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+
+    
+
+              
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({
+    mostrarIndicador: true,
+  }),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>
+
+<style lang="sass">
+.tarjetas-up
+  &__content
+    cursor: pointer
+    position: relative
+    overflow: hidden
+    border-radius: 10px
+    background-color: #fff7e6
+    &:hover
+      .tarjetas-up__content__image
+        top: 0
+    &__image
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: -100%
+      transition: top 0.3s ease-in-out
+      img
+        width: 100%
+        height: 100%
+</style>

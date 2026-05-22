@@ -1,0 +1,123 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    .row.justify-content-center.cursor-pointer
+      .col-md-5.mb-4
+        .nav-holder.align-items-center.px-0
+          figure
+            img(src="@/assets/curso/temas/ejm.png", alt="")
+          .text.p-lg-2.p-3
+            .row.px-3.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-4
+              .h5.mt-4.mt-lg-0.mb-2 La luz natural
+              p Producida por los rayos de sol.
+      .col-md-5.mb-4
+        .nav-holder.align-items-center.px-0(@mouseover="mostrarIndicador = false")
+          .indicador--hover(v-if="mostrarIndicador")
+          figure
+            img(src="@/assets/curso/temas/ejm.png", alt="")
+          .text.p-lg-2.p-3
+            .row.px-3.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-4
+              .h5.mt-4.mt-lg-0.mb-2 La luz artificial
+              p Producida por fuentes lumínicas artificiales.  
+
+              
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({
+    mostrarIndicador: true,
+  }),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>
+
+<style lang="sass">
+.cursor-pointer .nav-holder
+  cursor: pointer    
+.nav-holder
+  display: inline-block
+  margin: 10px 5px
+  overflow: hidden
+  position: relative
+  -webkit-transform: translateZ(0)
+  -moz-transform: translateZ(0)
+  transform: translateZ(0)
+
+.nav-holder *, .nav-holder *:before, .nav-holder *:after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-transition: all 0.45s ease
+  -moz-transition: all 0.45s ease
+  transition: all 0.45s ease
+
+.nav-holder:before
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  content: ''
+  background: rgb(253,216,53)
+  background: linear-gradient(180deg, rgba(253,216,53,0) 0%, rgba(253,216,53,1) 80%)
+  opacity: 0
+  z-index: 888
+  -webkit-transition: all 0.45s ease
+  -moz-transition: all 0.45s ease
+  -ms-transition: all 0.45s ease
+  transition: all 0.45s ease
+  -webkit-transform: translateY(80%)
+  -moz-transform: translateY(80%)
+  transform: translateY(80%)
+
+.nav-holder:hover:before
+  -webkit-transform: translateY(0)
+  -moz-transform: translateY(0)
+  transform: translateY(0)
+  opacity: 1
+  -webkit-transition-delay: 0.1s
+  -moz-transition-delay: 0.1s
+  transition-delay: 0.1s
+  border-radius: 14px
+
+.nav-holder
+  .text
+    position: absolute
+    top: 100%
+    bottom: 0px
+    left: 0px
+    right: 0px
+    z-index: 999
+    bottom: 0
+    padding: 1em
+  img
+    backface-visibility: hidden
+    max-width: 100%
+    vertical-align: top
+    z-index: 0
+  p
+    margin: 0
+    opacity: 0
+    line-height: 1.2em
+
+.nav-holder .h5
+  margin: 0
+  opacity: 1
+
+.nav-holder:hover
+  .text
+    top: 50%
+  .h5, p
+    opacity: 1
+</style>

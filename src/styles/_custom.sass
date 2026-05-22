@@ -1,106 +1,579 @@
 @use 'variables' as *
+
+.banner-principal__img
+  z-index: 1
 .banner-principal-decorativo
   &-1
+    width: 120px
+    animation: rotation 8s infinite linear
+    position: absolute
+    bottom: 38%
+    right: 33%
+    z-index: -1
+  &-2
+    width: 60px
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 68%
-    left: -10%
-    width: 20%
-  &-2
-    animation: float1 2.5s ease-in-out infinite alternate
-    position: absolute
-    top: 30%
-    right: 10%
-    width: 20%
+    bottom: 37%
+    left: 10%
 
-
+@keyframes rotation 
+  from 
+    transform: rotate(0deg)  
+  to 
+    transform: rotate(359deg)
 @keyframes float1
   0%
     transform: translateY(20px)
-
   100%
     transform: translateY(0px)
 
-.col-lg-7.col-xxl-5.ps-4.ps-sm-5.py-4.py-sm-5.banner-principal__info
-  flex: 0 0 auto !important
-  width: 58.33333333% !important
-.banner-principal__img 
-  padding-bottom: 0 !important;
-.banner-principal__row .banner-principal__img 
-    width: 33%;
-    
-.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
-  color: $color-sistema-texto !important  
+@keyframes float2
+  0%
+    transform: translateX(20px)
+  100%
+    transform: translateX(0px)
+@keyframes scale
+  0%
+    transform: scale(1)
+  100%
+    transform: scale(1.2)
 
-.boton *, .boton--sm *,
-.barra-avance__boton--regresar span
-  color: $white !important
-.banner-interno__titulo h1, .banner-interno__titulo h2, 
-.banner-interno__titulo h3, .banner-interno__titulo h4, 
-.banner-interno__titulo h5, .banner-interno__titulo h6
-  color: $color-sistema-texto !important  
 .titulo-principal.color-acento-contenido .titulo-principal__numero span
-  color: $white !important
-figcaption 
-    font-weight: normal !important
+  color: white !important   
 
-.banner-interno__titulo__icono i
-    color: $color-acento-botones !important;
+.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
+  color: $color-sistema-texto !important
+figcaption
+  font-weight: normal
+.barra-avance__boton--regresar span
+  color: $color-sistema-texto !important
+
+.acordion__accion__btn--a
+  background-color: #EEAC3A !important
+  transition: all 0.3s ease-out
+.acordion__activo
+  background-color: #fdf3e1 !important
+  transition: all 0.3s ease-out
+
+.avatar
+  position: absolute
+  bottom: 0
+  right: -4rem
+  z-index: 1
+  @media (max-width: 1000px)
+    display: none
+.crd--avatarHorizontal
+  position: relative
+  padding-right: 12rem
+  & > *
+    position: relative
+  h5
+    color: #7F4FC7
+  p
+    margin-bottom: 0
+  &::before
+    position: absolute
+    content: ''
+    top: 0
+    right: 0
+    width: calc( 100% - 60px)
+    height: 100%
+    background-color: #C5E5FE
+  @media (max-width: 1000px)
+    padding-right: 2rem
+.crd--first, .crd--last
+  &::before
+    background-color: #DDEDF8 !important
+.crd--first
+  &::before
+    border-top-left-radius: 30px
+.crd--last
+  &::before
+    border-bottom-left-radius: 30px
+
+.clr--pink
+  background-color: #FFAFB2
+.clr--pink02
+  background-color: #FFDFE0
+
+///// Colores --------------------------------------
+.bg1
+  background-color: #c3ffeb
+.bg2
+  background-color: #dcedff
+.clr--gris
+  background-color: #f7f7f7
+
+/// TITULOS TERCER NIVEL
+.titulo-tercer-nivel
+  width: fit-content
+  max-width: 100%
+  position: relative
+  display: inline-flex
+  align-items: center
+  background-color: $color-primario
+  border-radius: 30px
+  padding-right: 16px
+  padding-left: 52px
+  min-height: 48px
+ 
+  @media screen and (max-width: $bp-min-md)
+    padding-left: 0px
 
 
-/**************************************************************/
-/***CUSTOM STYLES***/
-/**************************************************************/
-.p-full-width
-  padding: 3rem 3.5rem!important;
-.bg-full-width
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: bottom
-  margin-inline: -3.3rem
-.bg-fondo
-  &-1
-    //background-image: url(../assets/curso/bg/3.svg)
-.bg-color
-  &-1
+  &__icon
+    position: absolute
+    left: -10px
+    top: 50%
+    transform: translateY(-50%)
+    width: 65px
+    max-width: 65px
+    height: auto
+
+    @media screen and (max-width: $bp-min-md)
+      display: none
+
+  &__text
+    margin: 0
+    margin: 0 15px 0 15px
+    white-space: normal
+    word-break: break-word
+
+///// Texto --------------------------------------
+.cstmH3
+  display: inline-block
+  padding-bottom: 7px
+  margin-bottom: 2rem
+  border-bottom: 3px solid #FF6B00
+.txt--green
+  color: #39A900 !important
+
+//// Tarjetas --------------------------------------
+.crd
+  &.brd--rad
+    border-radius: 20px 
+  &.crd--grayGrad
+    padding: 2rem
+    height: 100%
+    background-color: #F6F6F6
+    border-radius: 15px    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+    &:hover      
+      background: linear-gradient(180deg, rgba(25,137,226,1) 0%, rgba(10,81,139,1) 100%)
+      h4, p
+        color: white 
+      .bottomCircle
+        &::before
+          background-color: #FED981
+  &.crd--blue
+    background-color: #B1DBEA
+
+  &.crd--border
+    border: 4px solid $color-acento-botones
+    border-radius: 20px
+
+///// Utilidades --------------------------------------
+.img65
+  width: 65px  
+.img90
+  width: 90px  
+.img250
+  width: 250px  
+.brd--rad
+  border-radius: 20px
+
+///// Callouts --------------------------------------
+.callout-wrap
+  position: relative
+  padding-left: 22px
+  
+  @media screen and (max-width: $bp-min-lg)
+    padding-left: 0
+    padding-top: 30px
+
+  &-inverso
+    padding-left: 0
+    padding-right: 22px
+
+    @media screen and (max-width: $bp-min-lg)
+      padding-right: 0
+      padding-bottom: 30px
+
+.callout-box
+  position: relative
+  background-color: $color-primario
+  border-radius: 6px
+  overflow: visible
+  @media screen and (max-width: $bp-min-lg)
+      padding-top: 2.3rem !important;
+  &::before
+    content: ''
+    position: absolute
+    top: 50%
+    left: -22px
+    width: 44px
+    height: 44px
     background-color: $color-primario
+    transform: translateY(-50%) rotate(45deg)
 
+    @media screen and (max-width: $bp-min-lg)
+        top: -18px
+        left: 50%
+        transform: translateX(-50%) rotate(45deg)
+  &-inverso
+    background-color: $color-secundario
+    position: relative
+    border-radius: 6px
+    overflow: visible
+    @media screen and (max-width: $bp-min-lg)
+      padding-bottom: 2.3rem !important;
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      right: -20px
+      width: 44px
+      height: 44px
+      background-color: $color-secundario
+      transform: translateY(-50%) rotate(45deg)
+      @media screen and (max-width: $bp-min-lg)
+          top: 90%
+          left: 50%
+          transform: translateX(-50%) rotate(45deg)
 
+.tarjeta-codigo
+  border-radius: 10px
+  overflow: hidden
+  position: relative
+  padding-top: 3rem
+  &:before
+    position: absolute
+    content: ''
+    height: 55px
+    background-color: #3a1d71
+    width: 100%
+    top: 0
+    left: 0
+  &:after
+    position: absolute
+    content: url('../assets/curso/temas/botones.svg')
+    top: 0
+    left: 0
+    transform: translate(20px, 20px)
 
+.hr--line
+  margin: 1rem 0
+  width: 100%
+  height: 1px  
+  background-color: #B0C0D2
+.bg--gradientBlue        
+  background: linear-gradient(0deg, rgba(215,236,252,1) 0%, rgba(239,246,252,1) 100%)
+.no-pointer 
+  .tarjeta--boton
+    cursor: initial !important
+.cursor-pointer
+  .crd_hover_txt, .tarjeta-foto-hover, .nav-holder, .content-card4
+    cursor: pointer    
 
+.dialogo.color-primario .dialogo__words__word
+  color: #3c7792 !important
 
+.circl-arrow .slyder-f__btn i
+    font-size: 1.2rem
+    background-color: #FF4A69
+    //background-color: $color-acento-contenido
+    //color: $white
+    height: 46px
+    width: 46px
+    padding: 5px
+    border-radius: 500px
+    display: flex
+    justify-content: center
+    align-items: center
 
+///////// T13 - Tarj1 --------------------------------------
+.crd_hover_txt
+  position: relative  
+  padding: 0 !important
+  overflow: hidden !important  
+  &:hover    
+    .crd_hover_txt--body   
+      transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1) 
+      transform: translateY(0)
+  .crd_hover_txt--body
+    position: absolute
+    padding: 1.5rem
+    bottom: 0    
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1)
+    transform: translateY(calc( 100% - 3.85rem ))
+    background-color: rgba(255, 247, 230, 1) 
+  @media (min-width:1200px) and (max-width:1400px)  
+    .crd_hover_txt--body
+      p
+        font-size: 0.85em
 
-/**************************************************************/
-/*Media Queries*/  
-/**************************************************************/
+///////// T13 - Tarj2 --------------------------------------
+.bg-degrade
+  background: rgb(38,204,218)
+  background: linear-gradient(180deg, rgba(38,204,218,0.78) 0%, rgba(38,204,218,1) 100%)
+.tarjeta-foto-hover
+  position: relative
+  overflow: hidden
+  &:hover
+    .tarjeta-foto-hover__tarjeta
+      transform: translateY(0%)
+  &__titulo
+    position: absolute
+    bottom: 0
+    width: 100%
+  &__tarjeta
+    transition: transform 0.3s ease-in-out
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 100%
+    transform: translateY(100%)  
 
-//// DESKTOP SMALL 1400--------------------------------------
-@media screen and (max-width: $bp-min-xxl)
-  .mb-cus
-    margin-bottom: 2em  !important 
+///////// T13 - Tarj3 --------------------------------------
+.nav-holder
+  display: inline-block
+  margin: 10px 5px
+  overflow: hidden
+  position: relative
+  -webkit-transform: translateZ(0)
+  -moz-transform: translateZ(0)
+  transform: translateZ(0)
+.nav-holder *, .nav-holder *:before, .nav-holder *:after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-transition: all 0.45s ease
+  -moz-transition: all 0.45s ease
+  transition: all 0.45s ease
+.nav-holder:before
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  content: ''
+  background: rgb(253,216,53)
+  background: linear-gradient(180deg, rgba(253,216,53,0) 0%, rgba(253,216,53,1) 80%)
+  opacity: 0
+  z-index: 888
+  -webkit-transition: all 0.45s ease
+  -moz-transition: all 0.45s ease
+  -ms-transition: all 0.45s ease
+  transition: all 0.45s ease
+  -webkit-transform: translateY(80%)
+  -moz-transform: translateY(80%)
+  transform: translateY(80%)
+.nav-holder:hover:before
+  -webkit-transform: translateY(0)
+  -moz-transform: translateY(0)
+  transform: translateY(0)
+  opacity: 1
+  -webkit-transition-delay: 0.1s
+  -moz-transition-delay: 0.1s
+  transition-delay: 0.1s
+  border-radius: 14px
+.nav-holder
+  .text
+    position: absolute
+    top: 100%
+    bottom: 0px
+    left: 0px
+    right: 0px
+    z-index: 999
+    bottom: 0
+    padding: 1em
+  img
+    backface-visibility: hidden
+    max-width: 100%
+    vertical-align: top
+    z-index: 0
+  p
+    margin: 0
+    opacity: 0
+    line-height: 1.2em
+.nav-holder .h5
+  margin: 0
+  opacity: 1
+.nav-holder:hover
+  .text
+    top: 50%
+  .h5, p
+    opacity: 1
 
-//// TABLET 992--------------------------------------
-@media screen and (max-width: $bp-max-md)
-  .mb-cus
-    margin-bottom: 2em  !important  
-  .col-lg-7.col-xxl-5.ps-4.ps-sm-5.py-4.py-sm-5.banner-principal__info
-    width: 90% !important
+///////// T13 - Tarj4 --------------------------------------
+.content-card4
+  position: relative
+  margin: auto
+  height: 440px
+.content-card4 .content-overlay
+  background: #D3D3D3
+  position: absolute
+  left: 0
+  top: 0
+  bottom: 10%
+  right: 0
+  opacity: 0
+  -webkit-transition: all 0.4s ease-in-out 0s
+  -moz-transition: all 0.4s ease-in-out 0s
+  transition: all 0.4s ease-in-out 0s
+.content-card4:hover .content-overlay
+  opacity: 1
+.content-card4:hover .btn-numero h3
+  color: #00104E !important
+  background-color: #FFCA00
+  -webkit-transition: all 0.3s ease-in-out 0s
+  -moz-transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s
+.content-card4 img
+  z-index: 0
+  object-fit: cover
+  object-position: center center
+  height: 90%
+.tarjeta-details
+  position: absolute
+  padding-left: 1em
+  padding-right: 1em
+  width: 90%
+  top: 50%
+  left: 50%
+  opacity: 0
+  -webkit-transform: translate(-50%, -50%)
+  -moz-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+  -webkit-transition: all 0.3s ease-in-out 0s
+  -moz-transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s
+.tarjeta-details p
+  line-height: 1.3
+.content-card4:hover .tarjeta-details
+  top: 49%
+  opacity: 1
+.fadeIn-top
+  top: 20%
+.btn-numero h3
+  font-size: 35px
+  position: absolute
+  background-color: #2D54FE
+  color: #FFF
+  width: 60px
+  height: 60px
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  z-index: 9999
+  -webkit-transition: all 0.3s ease-in-out 0s
+  -moz-transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s
+.btn-numero h3:hover
+  color: #00104E !important
+  background-color: #FFCA00
+  -webkit-transition: all 0.3s ease-in-out 0s
+  -moz-transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s
+.btn-numero.btn-bottom-right h3
+  right: 0%
+  bottom: 4%
+.btn-numero.btn-bottom-left h3
+  left: 0%
+  bottom: 4%
+.btn-numero.btn-top-right h3
+  right: 0%
+  top: 0%
+.btn-numero.btn-top-left h3
+  left: 0%
+  top: 0%
+@media screen and (max-width: 640px)
+  .content-card4:hover .tarjeta-details
+    top: 40%;
+  .btn-numero h3
+    left: 41% !important
+  .tarjeta-details 
+    width: 95% !important 
+  .content-card4:hover .tarjeta-details
+    top: 49%  
 
-  
- 
-  
-//// TABLET MINI 768--------------------------------------
-@media screen and (max-width: $bp-min-md)
-  .mb-cus
-    margin-bottom: 2em  !important  
+///////// T13 - Tarj5 --------------------------------------
+.tarjetas-up
+  &__content
+    cursor: pointer
+    position: relative
+    overflow: hidden
+    border-radius: 10px
+    background-color: #fff7e6
+    &:hover
+      .tarjetas-up__content__image
+        top: 0
+    &__image
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: -100%
+      transition: top 0.3s ease-in-out
+      img
+        width: 100%
+        height: 100%
 
-  
+///////// T13 - Tabs1 --------------------------------------
+.escala-grises .tabs-b__tab 
+  &.tabs-b__tab--active .tabs-b__tab__icon
+    filter: grayscale(0)
+    transition: all 0.2s ease-out
+  .tabs-b__tab__icon
+    filter: grayscale(1)
+    transition: all 0.2s ease-out
 
-//// MOBILE 576--------------------------------------
-@media screen and (max-width: $bp-min-sm)
-  .mb-cus
-    margin-bottom: 2em  !important
+///////// T13 - Img1 --------------------------------------
+.img-infog 
+  height: 120px
+  border-top-left-radius: 80px 
+  border-bottom-left-radius: 80px 
+  img 
+    width: 130%
+    position: absolute
+    left: -8%
+    max-width: 124%
+    bottom: 0%
+@media (max-width: $bp-max-md)
+  .img-infog 
+    height: auto
+  .img-infografica__card
+    width: 220px
+    .contenido
+      width: 100%
+  .img-infog img 
+    display: none
+    width: 0%
+  .bg-white
+    border-radius: 15px
+    border: 2px solid #2D54FE
+    padding: 10px
 
-  
- 
+///////// T13 - Texto Destacado --------------------------------------
+.bg-carrousel
+  cursor: pointer
+  position: relative
+  background-image: url('../assets/curso/temas/t13/importante.svg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  width: 100%
+  min-height: 207px
+  overflow: hidden
+  &:hover
+    .bg-carrousel_content
+      left: 0
+  &_content
+    width: 100%
+    background-color: #ffe799
+    transition: left .3s ease-in-out
+    position: absolute
+    height: 100%
+    left: 150%

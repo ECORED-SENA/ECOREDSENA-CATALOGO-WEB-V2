@@ -1,0 +1,57 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    img(src='@/assets/curso/temas/audio/15.svg', alt='Texto que describa la imagen')
+      .row.justify-content-center.g-0
+        .col-lg-4
+          .tarjeta.clr--pink.p-4.rounded-0.h-100
+            .tarjeta.bg-white.p-4
+              TarjetaAudio.color-acento-contenido.mb-3(
+              texto="Mom, can you come with me to the doctor's office?"
+              :audio="require('@/assets/curso/temas/audio/5.mp3')"
+          )
+              .indicador--click(v-if="mostrarIndicadorTarjetaAudio")
+              p.mb-0 Mamá, ¿puedes venir conmigo al consultorio del doctor?
+        .col-lg-4
+          .tarjeta.clr--pink02.p-4.rounded-0.h-100
+            .tarjeta.bg-white.p-4
+              TarjetaAudio.color-acento-contenido.bg-white.mb-3(
+              texto="How are you doing, Doctor? Nice to meet you."
+              :audio="require('@/assets/curso/temas/audio/6.mp3')"
+            )
+              p.mb-0 ¿Cómo está, doctor? Es un placer conocerlo.
+        .col-lg-4
+          .tarjeta.clr--pink.p-4.rounded-0.h-100
+            .tarjeta.bg-white.p-4
+              TarjetaAudio.color-acento-contenido.bg-white.mb-3(
+              texto="Ok, Coach. I will follow your advice."
+              :audio="require('@/assets/curso/temas/audio/7.mp3')"
+            )
+              p.mb-0 Muy bien, entrenador. Voy a seguir su consejo.
+
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({
+    mostrarIndicadorTarjetaAudio: true,
+  }),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>
+<style lang="sass">
+.clr--pink
+  background-color: #FFAFB2
+.clr--pink02
+  background-color: #FFDFE0
+</style>

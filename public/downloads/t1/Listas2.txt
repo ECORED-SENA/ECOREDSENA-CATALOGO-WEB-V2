@@ -1,0 +1,81 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    .row.mb-5
+      .col-sm.mb-5.mb-sm-0
+        h4 Listado no ordenado básico
+        ul.lista-ul
+          li 
+            i.lista-ul__vineta
+            | Item lista no ordenada
+          li
+            ul
+              li 
+                i.lista-ul__vineta
+                | Item lista no ordenada
+              li 
+                i.lista-ul__vineta
+                | Item lista no ordenada
+          li 
+            i.lista-ul__vineta
+            | Item lista no ordenada
+          li 
+            i.lista-ul__vineta
+            | Item lista no ordenada 
+      .col-sm.mb-5.mb-sm-0
+        h4 Listado no ordenado color
+        ul.lista-ul--color
+          li 
+            i.fas.fa-brain
+            | Item lista no ordenada
+          li
+            ul
+              li 
+                i.fas.fa-bug
+                | Item lista no ordenada
+              li 
+                i.fas.fa-car-side
+                | Item lista no ordenada
+          li 
+            i.fas.fa-compass
+            | Item lista no ordenada
+          li 
+            i.fas.fa-eye
+            | Item lista no ordenada 
+
+      .col-sm
+        h4 Listado no ordenado color + separadores
+        ul.lista-ul--color.lista-ul--separador
+          li 
+            i.fas.fa-feather
+            | Item lista no ordenada
+          li.pb-0
+            ul
+              li 
+                i.fas.fa-cookie
+                | Item lista no ordenada
+          li 
+            i.fas.fa-hippo
+            | Item lista no ordenada
+          li 
+            i.fas.fa-kiwi-bird
+            | Item lista no ordenada        
+
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({}),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>

@@ -8,7 +8,7 @@
           figure
             img(src="@/assets/curso/sintesis.svg", alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. ")
         .col-auto
-          a.anexo.mb-5(:href="obtenerLink('/downloads/Sintesis.pdf')" target="_blank")
+          a.anexo.mb-5(:href="obtenerLink('/downloads/Infografia_Psicologia_de_moda.pdf')" target="_blank")
             .anexo__icono
               img(src="@/assets/bullets/icono-pdf.svg")
             .anexo__texto
