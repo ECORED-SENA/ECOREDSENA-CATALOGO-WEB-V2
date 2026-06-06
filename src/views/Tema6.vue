@@ -19,7 +19,7 @@
       Separador
       #t_6_1.titulo-segundo.color-acento-contenido
         h2 6.1 Acordeón (con viñeta en la izquierda) - tipo 1
-      AcordionA(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
+      AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
         .row(titulo="Titulo item 1")
           .col-md-6.mb-4.mb-md-0
             p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
@@ -31,10 +31,6 @@
           figure
             img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
             figcaption Leyenda de la imagen
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t6/AcordionA.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-3
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -49,7 +45,7 @@
       Separador
       #t_6_2.titulo-segundo.color-acento-contenido
         h2 6.2 Acordeón (con viñeta en la derecha) - tipo 2
-      AcordionA(tipo="b" clase-tarjeta="tarjeta tarjeta--azul")
+      AcordionA.mb-5(tipo="b" clase-tarjeta="tarjeta tarjeta--azul")
         .row(titulo="Titulo item 1")
           .col-md-6.mb-4.mb-md-0
             p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
@@ -64,10 +60,6 @@
               figcaption Leyenda de la imagen  
           .col-md-6.mb-4.mb-md-0
             p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t6/AcordionB.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -82,6 +74,45 @@
       Separador
       #t_6_3.titulo-segundo.color-acento-contenido
         h2 6.3 Acordeón con numeral / pasos
+      LineaTiempoD.color-secundario
+        .row(numero="1" titulo="Praesent luctus")
+          .col-12
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+            ol.lista-ol--cuadro
+              li.d-flex
+                .lista-ol--cuadro__vineta.v--green
+                  span 1
+                |
+                p.mb-0 Item lista ordenada 1
+              li.d-flex
+                .lista-ol--cuadro__vineta.v--green
+                  span 2
+                |
+                p.mb-0 Item lista ordenada 2
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+            ul.lista-ul--color
+              li.d-flex
+                i.fas.fa-brain.txt--green
+                |
+                p.mb-0 Item lista no ordenada
+              li.d-flex
+                ul
+                  li.d-flex
+                    i.fas.fa-bug.txt--green
+                    |
+                    p.mb-0 Item lista no ordenada
+                  li.d-flex
+                    i.fas.fa-car-side.txt--green
+                    |
+                    p.mb-0 Item lista no ordenada
+        .row(numero="2" titulo="Praesent luctus")
+          .col-md-6
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+          .col-md-6.mb-4.mb-md-0
+            pl This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      hr
       .row.justify-content-center.align-items-top.mb-4
         .col-md-4.mb-5.mb-md-0
           img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')  
@@ -107,11 +138,7 @@
                   img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
                   figcaption Leyenda de la imagen
               .col-md-6.mb-4.mb-md-0
-                p.text-small This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.  
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t6/LineaTiempoD.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
+                p.text-small This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones

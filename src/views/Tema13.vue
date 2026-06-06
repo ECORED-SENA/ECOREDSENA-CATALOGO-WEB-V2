@@ -34,10 +34,6 @@
             .crd_hover_txt--body
               h4.mb-3 Titulo 3
               p.mb-0 Con este tipo de reportes usted va a hacer un seguimiento específico a su equipo de ventas respecto a sus objetivos empresariales a largo plazo.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tarj1.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       hr.my-5
       .row.cursor-pointer.mb-4.mb-md-4
         .col-lg-4.col-md-6.mb-3.mb-md-3
@@ -68,10 +64,6 @@
               .p-4.text-center
                 h5 Bloqueos perceptivos
                 p.mb-0 Limitan la forma de ver el mundo y terminan por acabar con todas las ideas.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tarj2.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       hr.my-5
       .row.justify-content-center.cursor-pointer
         .col-md-5.col-6.mb-4
@@ -91,10 +83,6 @@
               .row.px-3.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-4
                 .h5.mt-4.mt-lg-0.mb-2 La luz artificial
                 p Producida por fuentes lumínicas artificiales.     
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tarj3.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -157,10 +145,6 @@
             .text-center.p-lg-4
               h5 Tarjeta 3
               p.mb-0 This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      .row.justify-content-center.mb-4
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tarj5.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       Separador
       #t_13_2.titulo-segundo.color-acento-contenido
         h2 13.2 Texto destacado
@@ -170,10 +154,6 @@
         .bg-carrousel_content.px-5.py-5.justify-content-center.d-flex.align-items-center
           .text-center.w-75
             p.fw-bold.mb-0 This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Text-Dest.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       Separador
       #t_13_3.titulo-segundo.color-acento-contenido
         h2 13.3 Pestañas o Tabs
@@ -189,10 +169,6 @@
             .col-md-11          
               h4 Celebrate your failures 2
               p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tab1.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente  
       Separador
       #t_13_4.titulo-segundo.color-acento-contenido
         h2 13.4 Imagen Infografica
@@ -209,11 +185,7 @@
           .col-md-4
             img(src='@/assets/curso/temas/t13/tema1-5-ico1.svg', alt='')
           .col-md-8.col-12.px-lg-4.px-3.py-1.contenido
-            p.mb-0 Desviaciones en la ejecución de actividades conforme al plan.    
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Img1.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
+            p.mb-0 Desviaciones en la ejecución de actividades conforme al plan.
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones

@@ -86,13 +86,9 @@
               img(src='@/assets/componentes/ej-05.svg' alt='')
           h2.text-center 6
           p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-      .row.justify-content-center.mb-5
-        .col-3
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t5/Carrusel.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       hr.my-5
       h3.titulo-tercero Tipo 2
-      SlyderF.circl-arrow.mb-4(columnas="col-lg-6 col-xl-4")
+      SlyderF.circl-arrow.mb-5(columnas="col-lg-6 col-xl-4")
         .tarjeta.color-primario.p-4
           .row.justify-content-center.mb-3
             .col-8
@@ -127,10 +123,6 @@
           .row.justify-content-center.mb-3
             .col-8
               img(src='@/assets/componentes/ej-05.svg' alt='')
-      .row.justify-content-center.mb-5
-        .col-3
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t5/Carrusel2.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones

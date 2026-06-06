@@ -80,11 +80,6 @@
                   img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')  
             h3.text-center Intuition important
             p.text-center.mb-0 Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
-      .row.justify-content-center.mb-5
-        p.text-center.fst-italic #[strong Nota:] Revisar los estilos para quitar el cursor pointer
-        .col-auto          
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_avatar.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       hr.my-5
       h3.titulo-tercero Tipo 2
       .row
@@ -104,10 +99,6 @@
               .p-4
                 h4 John Doe
                 p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_avatar2.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       hr.my-5
       h3.titulo-tercero Tipo 3
       .row.mb-4
@@ -132,10 +123,6 @@
               .p-4.text-white
                 h4.text-center Greatness isn’t the height
                 p.mb-0 moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_avatar3.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -150,7 +137,7 @@
       Separador
       #t_10_2.titulo-segundo.color-acento-contenido
         h2 10.2 Tarjetas - conectadas
-      .tarjeta--container.row.mb-4
+      .tarjeta--container.row.mb-5
         .col-md.tarjeta.color-primario.p-5
           .row.justify-content-center.mb-4
             .col-6
@@ -172,10 +159,6 @@
                 img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')  
           h2.text-center Sterility leads to<br>susceptibility
           p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones(:href="obtenerLink('/downloads/t10/Tarjetas_conectadas.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .titulo-sexto.color-acento-contenido.mb-3
         h5 Ejemplo
         span tarjetas - conectadas
@@ -208,10 +191,6 @@
               .col
                 h5 Comunicación correcta de los resultados
                 p En los análisis de resultados, el determinante es saber mostrar la información, tenga en cuenta la objetividad, la claridad, la transparencia y la organización de la información.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones(:href="obtenerLink('/downloads/t10/Tarjetas_conectadas2.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -257,10 +236,6 @@
               .tarjeta-slide__contenido.p-4.p-xl-5
                 h1 John Doe
                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_animadas.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       hr.my-5
       h3.titulo-tercero Tipo 1 - Tarjetas flip
       .row.mb-4
@@ -293,10 +268,6 @@
               .tarjeta-flip__contenido.p-4
                 h4 John Doe
                 p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_animadas2.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -340,10 +311,7 @@
             p.text-center
               b Ruta integral de atención en salud
             p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_con_numero.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
+
 </template>
 
 <script>

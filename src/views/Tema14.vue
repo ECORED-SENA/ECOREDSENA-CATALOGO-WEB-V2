@@ -13,10 +13,6 @@
         template(#nombre-actividad) Arrastrar y Soltar
         template(#titulo-actividad) Greeting the doctor. / Saludando al doctor.
         template(#descripcion-actividad) Escuche los audios y complete los espacios en blanco de cada una de las frases arrastrando el término correcto.
-      .row.justify-content-end.mb-2.me-3
-        .col-auto
-          a.boton.color-primario.b--rad(:href="obtenerLink('/downloads/Dialogo.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
 
 </template>
 

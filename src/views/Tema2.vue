@@ -82,10 +82,6 @@
             a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/Infografia_Psicologia_de_moda.pdf')" target="_blank" type="application/pdf")
               span Descargar
               i.fas.fa-file-download
-      .row.justify-content-center.mb-5.me-3
-        .col-auto
-          a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t2/Llamado_accion_infografias.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
 
 </template>
 

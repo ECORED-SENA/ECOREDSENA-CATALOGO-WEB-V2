@@ -60,10 +60,6 @@
                 strong user style sheets
                 |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
               p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t7/TabsA.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -106,10 +102,6 @@
               figure
                 img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
                 figcaption Leyenda de la imagen
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t7/TabsC.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -143,10 +135,6 @@
             .col-md-6
               h4 Celebrate your failures 2
               p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t7/TabsB.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones

@@ -52,10 +52,6 @@
                 figcaption Leyenda de la imagen
             .col-md-5.mb-4.mb-md-0
               p This is another paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-      .row.justify-content-center.mb-5.me-3
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t4/Slide_navegacion_simple_a.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       hr.my-5
       h3.titulo-tercero Opción 1 - Tipo b
       .tarjeta.tarjeta--azul.p-4.mb-4
@@ -74,10 +70,6 @@
                 figcaption Leyenda de la imagen
             .col-md-6.mb-4.mb-md-0
               p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      .row.justify-content-center.mb-5.me-3
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t4/Slide_navegacion_simple_b.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5.mt-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -114,10 +106,6 @@
                 figcaption Leyenda de la imagen
             .col-md-6.mb-4.mb-md-0
               p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      .row.justify-content-center.mb-5.me-3
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t4/Slide_navegacion_con_numerales.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-3
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -153,10 +141,6 @@
                 figcaption Leyenda de la imagen
             .col-md-6.mb-4.mb-md-0
               p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      .row.justify-content-center.mb-5.me-3
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t4/Slide_navegacion_numero_titulo.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       hr.my-5
       h3.titulo-tercero Opción 2
       .tarjeta.tarjeta--gris.p-4.mb-4
@@ -175,10 +159,6 @@
                 figcaption Leyenda de la imagen
             .col-md-6.mb-4.mb-md-0
               p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      .row.justify-content-center.mb-5.me-3
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t4/Slide_navegacion_titulo.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones

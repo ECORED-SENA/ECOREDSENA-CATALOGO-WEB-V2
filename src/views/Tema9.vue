@@ -64,10 +64,6 @@
               figcaption Leyenda de la imagen
           .col-md-6.mb-4.mb-md-0
             p.text-small This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t9/LineaTiempoD.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       TabsA.color-acento-botones
         .tarjeta.clr--gris.p-4(titulo="Requerimientos de información")
           ul.lista-ul.mb-4
@@ -96,10 +92,6 @@
           .col-md-6
             h5 Nullam vulputate mauris eros, ut.
             p This is another paragraph. I think it needs to be added that the set of elements tested
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t9/PasosA.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       TabsA.color-acento-botones
         .tarjeta.clr--gris.p-4(titulo="Requerimientos de información")
           ul.lista-ul.mb-4
@@ -128,10 +120,6 @@
               figure
                 img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
                 figcaption Leyenda de la imagen
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t9/PasosB.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones

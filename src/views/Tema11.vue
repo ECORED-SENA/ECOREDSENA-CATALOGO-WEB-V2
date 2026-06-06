@@ -37,10 +37,6 @@
             texto="Texto de muestra "
             :audio="audioEj"
           )
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t11/Audio.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       hr.my-5
       .titulo-segundo.color-acento-contenido
         h2 Ejemplos destacados
@@ -70,10 +66,7 @@
               :audio="audio7"
             )
               p.mb-0 Muy bien, entrenador. Voy a seguir su consejo.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t11/Audio2.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
+
 </template>
 
 <script>

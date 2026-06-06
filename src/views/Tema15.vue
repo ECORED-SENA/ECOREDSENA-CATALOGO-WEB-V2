@@ -64,13 +64,13 @@
             ol.lista-ul.mb-0
               li.mb-4
                 i.fas.fa-angle-right.txt--green
-                |   #[b Paso 1: Instala la librería.]
+                | #[b Paso 1: Instala la librería.]
                 | #[br] En la terminal ejecuta el siguiente comando para instalar la librería.
                 .crd.bg1.p-4.mt-2
                   p.mb-0.fw-bold npm install prismjs
               li.mb-4
                 i.fas.fa-angle-right.txt--green
-                |   #[b Paso 2: Importa Prism, el tema CSS y los lenguajes que necesites.]
+                | #[b Paso 2: Importa Prism, el tema CSS y los lenguajes que necesites.]
                 | #[br] En el archivo de TemaX.vue, importa Prism, el tema CSS y los lenguajes que necesites.
                 .crd.bg1.p-4.mt-2
                   p.mb-0 import Prism from 'prismjs'
@@ -83,9 +83,10 @@
                 | #[b Paso 3: Selecciona el lenguaje de programación.]
                 | #[br] En el codigo indica que tipo de lenguajes se van a usar. Por ejemplo:
                 .crd.bg1.p-4.mt-2
-                  p.mb-0 &lt;pre class="language-javascript"&gt;&lt;code&gt;
-                    | console.log('Hola, mundo!');
-                    | &lt;/code&gt;&lt;/pre&gt;
+                  p.mb-0 pre.language-javascript(language="javascript")
+                  p.mb-0.ms-2 code
+                  p.mb-0.ms-4 | 
+                  p.mb-0.ms-4 | console.log('Hola, mundo!');
               li
                 i.fas.fa-angle-right.txt--green
                 | #[b Paso 4: Ejecuta el resaltado.]
@@ -97,10 +98,6 @@
                 | #[br] En el #[b updated]:
                 .crd.bg1.p-4.mt-2
                   p.mb-0 Prism.highlightAllUnder(this.$el)
-      .row.justify-content-center.mb-5
-          .col-auto
-            a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t15/Prismjs.txt')" target="_blank" type="application/pdf")
-              span Ver código fuente
 
 </template>
 

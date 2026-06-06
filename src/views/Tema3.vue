@@ -38,10 +38,6 @@
         .tarjeta.color-acento-botones.p-3(x="70%" y="70%" numero="B")
           .h5.mb-2 titulo
           p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-      .row.justify-content-center.mb-5.me-3
-        .col-auto
-          a.boton.color-borones.texto-blanco(:href="obtenerLink('/downloads/t3/Infografia_puntos_calientes.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -79,10 +75,6 @@
         div(x="70%" y="70%" tooltip="tooltip de max 35 caracteres")
           .h5.mb-2 titulo
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-      .row.justify-content-center.mb-5.me-3
-        .col-auto
-          a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t3/Infografia_ventanas_modales.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones

@@ -9,21 +9,15 @@
       #t_1_1.titulo-segundo.color-acento-contenido
         h2 1.1 Encabezados
       h3.mb-5 #[i.fas.fa-angle-double-right.txt--green] Estilo de título para el índice de contenidos:             
-      .row.justify-content-center.align-items-center
-        .col-11
-          .titulo-principal.color-primario
-            .titulo-principal__numero
-              span 1
-            h1 Título principal, 30pt        
-          .titulo-segundo.color-primario
-            h2 1.1  Título de segundo nivel, 24pt
-          .titulo-tercer-nivel.mb-5(data-aos="fade-right")
-            img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/1.svg')
-            h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Título de tercer nivel, 20pt
-      .row.justify-content-center.mb-4
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Encabezados.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
+      .titulo-principal.color-primario
+        .titulo-principal__numero
+          span 1
+        h1 Título principal, 30pt        
+      .titulo-segundo.color-primario
+        h2 1.1  Título de segundo nivel, 24pt
+      .titulo-tercer-nivel.mb-5(data-aos="fade-right")
+        img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/1.svg')
+        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Título de tercer nivel, 20pt
       Separador
       #t_1_2.titulo-segundo.color-acento-contenido
         h2 1.2 Párrafos
@@ -35,10 +29,6 @@
         | o 
         span.etiqueta etiquetas
         | de color (según paleta del programa). Así mismo, el ancho de los cajones textos permite variación en las doce (12) columnas. 
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Parrafos.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
       Separador
       #t_1_3.titulo-segundo.color-acento-contenido
         h2 1.3 Listados
@@ -47,122 +37,138 @@
         .col-md.mb-5.mb-sm-0
           h4 Listado ordenado básico
           ol.lista-ol
-            li 
+            li.d-flex
               span.text-bold 1. 
-              | Item lista ordenada 1
-            li 
+              |
+              p.mb-0 Item lista ordenada 1
+            li.d-flex
               span.text-bold 2. 
-              | Item lista ordenada 2
-            li 
+              |
+              p.mb-0 Item lista ordenada 2
+            li.d-flex
               span.text-bold a. 
-              | Item lista ordenada a
-            li 
+              |
+              p.mb-0 Item lista ordenada a
+            li.d-flex
               span.text-bold b. 
-              | Item lista ordenada b 
+              |
+              p.mb-0 Item lista ordenada b 
         .col-sm.mb-5.mb-sm-0
           h4 Listado ordenado cuadro color
           ol.lista-ol--cuadro
-            li 
+            li.d-flex
               .lista-ol--cuadro__vineta.v--green
                 span 1
-              | Item lista ordenada 1
-            li 
+              |
+              p.mb-0 Item lista ordenada 1
+            li.d-flex
               .lista-ol--cuadro__vineta.v--green
                 span 2
-              | Item lista ordenada 2
-            li 
+              |
+              p.mb-0 Item lista ordenada 2
+            li.d-flex
               .lista-ol--cuadro__vineta.v--green
                 span a
-              | Item lista ordenada a
-            li 
+              |
+              p.mb-0 Item lista ordenada a
+            li.d-flex
               .lista-ol--cuadro__vineta.v--green
                 span b
-              | Item lista ordenada b
+              |
+              p.mb-0 Item lista ordenada b
         .col-sm.mb-5.mb-sm-0
           h4 Listado ordenado cuadro color + Separadores
           ol.lista-ol--cuadro.lista-ol--separador
-            li 
+            li.d-flex
               .lista-ol--cuadro__vineta.v--green
                 span 1
-              | Item lista ordenada 1
-            li 
+              |
+              p.mb-0 Item lista ordenada 1
+            li.d-flex
               .lista-ol--cuadro__vineta.v--green
                 span 2
-              | Item lista ordenada 3
-            li 
+              |
+              p.mb-0 Item lista ordenada 3
+            li.d-flex
               .lista-ol--cuadro__vineta.v--green
                 span a
-              | Item lista ordenada a
-            li 
+              |
+              p.mb-0 Item lista ordenada a
+            li.d-flex
               .lista-ol--cuadro__vineta.v--green
                 span b
-              | Item lista ordenada b
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Listas.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
+              |
+              p.mb-0 Item lista ordenada b
       .row
         .col-sm.mb-5.mb-sm-0
           h4 Listado no ordenado básico
           ul.lista-ul
-            li 
+            li.d-flex
               i.lista-ul__vineta
-              | Item lista no ordenada
-            li
+              |
+              p.mb-0 Item lista no ordenada 1
+            li.d-flex
+              i.lista-ul__vineta
+              |
+              p.mb-0 Item lista no ordenada 2
+            li.d-flex
               ul
-                li 
+                li.d-flex
                   i.lista-ul__vineta
-                  | Item lista no ordenada
-                li 
+                  |
+                  p.mb-0 Item lista no ordenada 1
+                li.d-flex
                   i.lista-ul__vineta
-                  | Item lista no ordenada
-            li 
+                  |
+                  p.mb-0 Item lista no ordenada 2
+            li.d-flex
               i.lista-ul__vineta
-              | Item lista no ordenada
-            li 
+              |
+              p.mb-0 Item lista no ordenada a
+            li.d-flex
               i.lista-ul__vineta
-              | Item lista no ordenada 
+              |
+              p.mb-0 Item lista no ordenada b
         .col-sm.mb-5.mb-sm-0
           h4 Listado no ordenado color
           ul.lista-ul--color
-            li 
+            li.d-flex
               i.fas.fa-brain.txt--green
-              | Item lista no ordenada
-            li
+              |
+              p.mb-0 Item lista no ordenada
+            li.d-flex
               ul
-                li 
+                li.d-flex
                   i.fas.fa-bug.txt--green
-                  | Item lista no ordenada
-                li 
+                  |
+                  p.mb-0 Item lista no ordenada
+                li.d-flex
                   i.fas.fa-car-side.txt--green
-                  | Item lista no ordenada
-            li 
+                  |
+                  p.mb-0 Item lista no ordenada
+            li.d-flex
               i.fas.fa-compass.txt--green
-              | Item lista no ordenada
-            li 
+              |
+              p.mb-0 Item lista no ordenada
+            li.d-flex
               i.fas.fa-eye.txt--green
-              | Item lista no ordenada 
+              |
+              p.mb-0 Item lista no ordenada 
         .col-sm
           h4 Listado no ordenado color + Separadores
           ul.lista-ul--color.lista-ul--separador
-            li 
+            li.d-flex
               i.fas.fa-feather.txt--green
-              | Item lista no ordenada
-            li.pb-0
-              ul
-                li 
-                  i.fas.fa-cookie.txt--green
-                  | Item lista no ordenada
-            li 
+              |
+              p.mb-0 Item lista no ordenada
+            li.d-flex
               i.fas.fa-hippo.txt--green
-              | Item lista no ordenada
-            li 
+              |
+              p.mb-0 Item lista no ordenada
+            li.d-flex
               i.fas.fa-kiwi-bird.txt--green
-              | Item lista no ordenada                                                          
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Listas2.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
+              |
+              p.mb-0 Item lista no ordenada
       Separador
       #t_1_4.titulo-segundo.color-acento-contenido
         h2 1.4 Bloques de texto destacado
@@ -175,10 +181,6 @@
         .col-lg-7
           .cajon-b.color-primario.arriba-izquierda.p-3
             p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel porta justo. Praesent congue nibh a justo ornare, eget vulputate nisl eleifend. Cras interdum finibus lacinia. Fusce dignissim sapien sit amet orci imperdiet, pharetra maximus nisi ullamcorper. Aliquam interdum elit ac nisi viverra, ultrices finibus est ultricies. Fusce tincidunt velit nulla. Aliquam eleifend libero eu neque rhoncus, sed placerat mi ornare.
-      .row.justify-content-center.mt-4
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Cajon.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
       hr.my-5
       .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
         .bloque-texto-g__img(
@@ -187,11 +189,7 @@
           p.mb-0 Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
             br
             br
-            | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure.      
-      .row.justify-content-center.mt-4
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Cajon2.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
+            | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure.
       hr.my-5
       .bloque-texto-g.bloque-texto-g--inverso.color-secundario.p-3.p-sm-4.p-md-5
         .bloque-texto-g__img(
@@ -200,11 +198,8 @@
           p.mb-0 Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
             br
             br
-            | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure.                 
-      .row.justify-content-center.mt-4.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Cajon3.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
+            | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure.
+      hr.my-5
       .row.justify-content-center.align-items-center.mb-5
           .col-12.col-sm-8.col-lg-4
               img(src='@/assets/curso/temas/img1.svg').m-auto
@@ -212,6 +207,7 @@
             .callout-wrap
               .callout-box.p-4.p-md-5
                 p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel porta justo. Praesent congue nibh a justo ornare, eget vulputate nisl eleifend. Cras interdum finibus lacinia. Fusce dignissim sapien sit amet orci imperdiet, pharetra maximus nisi ullamcorper. Aliquam interdum elit ac nisi viverra, ultrices finibus est ultricies. Fusce tincidunt velit nulla. Aliquam eleifend libero eu neque rhoncus, sed placerat mi ornare.
+      hr.my-5
       .row.justify-content-center.align-items-center.mb-5
           .col-12.col-sm-12.col-lg-8
             .callout-wrap-inverso
@@ -219,10 +215,6 @@
                 p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel porta justo. Praesent congue nibh a justo ornare, eget vulputate nisl eleifend. Cras interdum finibus lacinia. Fusce dignissim sapien sit amet orci imperdiet, pharetra maximus nisi ullamcorper. Aliquam interdum elit ac nisi viverra, ultrices finibus est ultricies. Fusce tincidunt velit nulla. Aliquam eleifend libero eu neque rhoncus, sed placerat mi ornare.
           .col-12.col-sm-8.col-lg-4
               img(src='@/assets/curso/temas/img1.svg').m-auto
-      .row.justify-content-center.mt-4.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Callouts.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
       Separador
       #t_1_5.titulo-segundo.color-acento-contenido
         h2 1.5 Citas
@@ -237,11 +229,7 @@
                 p Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
                   br
                   br
-                  | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure. 
-      .row.justify-content-center.mt-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Citas.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
+                  | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure.
       hr.my-5
       .row
         .col-lg-6.mb-5.mb-lg-0
@@ -257,10 +245,6 @@
             i.fas.fa-quote-right
             h2.mb-2 Then you’ll prove to yourself that you can survive anything.
             span - The graphic designer
-      .row.justify-content-center.mt-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Citas2.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
       hr.my-5
       .row.mb-5
         .col-lg-6.mb-5.mb-lg-0
@@ -287,10 +271,6 @@
                   .h6.mb-0 Lorem ipsum dolor sit amet
               .col-4
                 img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
-      .row.justify-content-center.mt-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Citas3.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
       hr.my-5
       h3.titulo-tercero Cajón texto color F
       .bloque-texto-f.color-primario.pt-4.px-5.mb-5
@@ -303,10 +283,6 @@
         .bloque-texto-f__avatar
           .bloque-texto-f__avatar__img
             img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
-      .row.justify-content-center.mt-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Citas4.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
       Separador
       #t_1_6.titulo-segundo.color-acento-contenido
         h2 1.6 Imágenes 
@@ -315,11 +291,7 @@
         span subtitulo  
       figure.mb-3
         img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-        figcaption Leyenda de la imagen 
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Imagenes.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
+        figcaption Leyenda de la imagen
       hr.my-5
       .row.justify-content-around.mb-4
         .col-md-6.col-lg-4.mb-4
@@ -334,21 +306,13 @@
               img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
             .imagen-titulo__titulo
               h4.m-0 Titulo de imagen
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Imagenes2.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
       Separador
       #t_1_7.titulo-segundo.color-acento-contenido
         h2 1.7 Video 
       figure.mb-3
         .video
           iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-        figcaption Video: Leyenda del video
-      .row.justify-content-center.mb-4
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Video.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente                
+        figcaption Video: Leyenda del video         
       Separador
       #t_1_8.titulo-segundo.color-acento-contenido
         h2 1.8 Tablas
@@ -377,10 +341,6 @@
               td Celda 2
               td Celda 3
               td Celda 4
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones(:href="obtenerLink('/downloads/t1/Tabla1.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       hr.my-5
       .tabla-b.color-primario.mb-4
         .tabla-b__header
@@ -402,11 +362,7 @@
               td The new becomes threatening, the old reassuring.” You are not your work. Don’t lie to yourself. Never, never assume that what Respect your craft. Widows and orphans are terrible.
             tr
               th Formal
-              td Design as if your life depended on it. Keep going. It isn’t what you are, but what you’re going to become. Don’t censor yourself. 
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones(:href="obtenerLink('/downloads/t1/Tabla2.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
+              td Design as if your life depended on it. Keep going. It isn’t what you are, but what you’re going to become. Don’t censor yourself.
       hr.my-5
       .tabla-c.mb-4
         table
@@ -455,11 +411,7 @@
                 .h6.mb-0 $12.500.200
                 span.text-small Textos pequeños
               td
-                .h6 FDSD33          
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Tabla3.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
+                .h6 FDSD33
       Separador
       #t_1_9.titulo-segundo.color-acento-contenido
         h2 1.9 Llamados a la acción
@@ -482,10 +434,6 @@
             figure
               img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
               figcaption Leyenda de la imagen
-      .row.justify-content-center.mb-5.mt-4
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Modal.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
       h3.mb-5 #[i.fas.fa-angle-double-right.txt--green] Recursos y enlaces externos
       .row
         .col-lg-6
@@ -519,11 +467,7 @@
             .anexo__icono
               img(src="@/assets/template/icono-link.svg")
             .anexo__texto
-              p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias         
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Externos.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
+              p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
       hr.my-5
       .tarjeta.color-primario.p-3.mb-4
         .row.justify-content-around.align-items-center
@@ -538,10 +482,6 @@
                 a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
                   span Descargar
                   i.fas.fa-file-download
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Externos2.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
       Separador
       #t_1_10.titulo-segundo.color-acento-contenido
         h2 1.10 Botones
@@ -580,10 +520,6 @@
         a.boton--sm.color-acento-botones.texto-blanco.me-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
           span Descargar
           i.fas.fa-file-download
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Botones.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente 
       Separador
       #t_1_11.titulo-segundo.color-acento-contenido
         h2 1.11 Animaciones
@@ -616,10 +552,6 @@
         .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
           .tarjeta.color-primario.text-center.p-3(data-aos="fade-down-left")
             h3.mb-0 fade-down-left
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Animaciones.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
 
 </template>
 

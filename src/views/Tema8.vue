@@ -48,10 +48,6 @@
               figcaption Leyenda de la imagen      
           .col-lg-6.mb-4.mb-lg-0
             p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t8/LineaTiempoE.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones       
@@ -96,10 +92,6 @@
               figure
                 img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
                 figcaption Leyenda de la imagen
-      .row.justify-content-center.mb-5
-        .col-auto
-          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t8/LineaTiempoC.txt')" target="_blank" type="application/pdf")
-            span Ver código fuente
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones       
