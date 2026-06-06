@@ -1,0 +1,66 @@
+
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    .tarjeta-codigo
+      pre.language-java(language="java").mb-5
+        //pre.language-NOMBRE-DEL-LENGUAJE(language="NOMBRE-DEL-LENGUAJE").mb-5
+        code
+          | public class Main {
+          |   public static void main(String[] args) {
+          |     int edad_actual = 25;
+          |     int edad_futura = edad_actual + 5;
+          |     System.out.println("Edad dentro de 5 a&ntilde;os: " + edad_futura);
+          |   }
+          | }
+    
+</template>
+
+<script>
+import Prism from 'prismjs'
+import 'prismjs/themes/prism.css'
+import 'prismjs/components/prism-java'
+// import 'prismjs/components/prism-NOMBRE-DEL-LENGUAJE'
+
+export default {
+  name: 'Tema15',
+  data() {
+    return {
+      mostrarIndicador: true,
+    }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+      Prism.highlightAllUnder(this.$el)
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+    Prism.highlightAllUnder(this.$el)
+  },
+}
+</script>
+<style lang="sass">
+.tarjeta-codigo
+  border-radius: 10px
+  overflow: hidden
+  position: relative
+  padding-top: 3rem
+  &:before
+    position: absolute
+    content: ''
+    height: 55px
+    background-color: #3a1d71
+    width: 100%
+    top: 0
+    left: 0
+  &:after
+    position: absolute
+    content: url('../assets/curso/temas/botones.svg')
+    top: 0
+    left: 0
+    transform: translate(20px, 20px)
+<style>

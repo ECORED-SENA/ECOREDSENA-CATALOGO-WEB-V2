@@ -1,0 +1,50 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+    
+    .row.mb-4
+        .col-md-6.col-lg.mb-5.mb-lg-0
+          .tarjeta-avatar
+            img(src='@/assets/componentes/ej-05.svg' alt='')
+            //- .tarjeta debe ir acompañado de una de una de estas clases => 
+            //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+            //- estas clases tambien tienen un modificador --borde
+            .tarjeta.color-primario
+              .p-4
+                h4.text-center John Doe
+                p.mb-0 moment. K askdnaskjda sjkdn akjsndasd ajshd akjshd kajshd ask djhak sjdha ksjdha kjsdha kjsdha kjsdh akjshda kjshd aksjdh kajsd djkhakjshdka jsak Abandon the shelter of insecurity.
+
+        .col-md-6.col-lg.mb-5.mb-lg-0
+          .tarjeta-avatar
+            img(src='@/assets/componentes/ej-05.svg' alt='')
+            .tarjeta.color-acento-botones
+              .p-4
+                h4.text-center John Doe
+                p.mb-0 moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+        .col-md-6.col-lg.mb-5.mb-lg-0
+          .tarjeta-avatar
+            img(src='@/assets/componentes/ej-05.svg' alt='')
+            .tarjeta.color-acento-contenido
+              .p-4.text-white
+                h4.text-center Greatness isn’t the height
+                p.mb-0 moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({}),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>

@@ -1,0 +1,92 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    .row.justify-content-center.mb-5
+        .col-lg-9.position-relative
+          .avatar
+            figure
+              img(src="@/assets/curso/temas/tarjetas/conectada_01.svg", alt="alt").img250
+          
+          .crd.crd--avatarHorizontal.crd--first.py-4
+            .row.align-items-center
+              .col-auto
+                figure
+                  img(src="@/assets/curso/temas/tarjetas/conectada_02.svg", alt="alt").img100
+              .col
+                h5 Calidad de la información
+                p Es importante tener en cuenta las variables, la ponderación de estas refleja la calidad de la información, la cual le permitirá obtener información concreta, clara y medible. Es necesario resaltar las características determinantes desde enfoques cualitativos y cuantitativos del dato obtenido.
+          
+          .crd.crd--avatarHorizontal.py-4
+            .row.align-items-center
+              .col-auto
+                figure
+                  img(src="@/assets/curso/temas/tarjetas/conectada_02.svg", alt="alt").img100
+              .col
+                h5 Aplicación de técnicas
+                p Desarrolle técnicas que le permitan tener un panorama completo de la información que se esté analizando, integrando las variables obtenidas en la medición y contrastando detalladamente los datos.
+          
+          .crd.crd--avatarHorizontal.crd--last.py-4
+            .row.align-items-center
+              .col-auto
+                figure
+                  img(src="@/assets/curso/temas/tarjetas/conectada_03.svg", alt="alt").img100
+              .col
+                h5 Comunicación correcta de los resultados
+                p En los análisis de resultados, el determinante es saber mostrar la información, tenga en cuenta la objetividad, la claridad, la transparencia y la organización de la información.
+  
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({}),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>
+<style lang="sass">
+.avatar
+  position: absolute
+  bottom: 0
+  right: -4rem
+  z-index: 1
+  @media (max-width: 1000px)
+    display: none
+.crd--avatarHorizontal
+  position: relative
+  padding-right: 12rem
+  & > *
+    position: relative
+  h5
+    color: #7F4FC7
+  p
+    margin-bottom: 0
+  &::before
+    position: absolute
+    content: ''
+    top: 0
+    right: 0
+    width: calc( 100% - 60px)
+    height: 100%
+    background-color: #C5E5FE
+  @media (max-width: 1000px)
+    padding-right: 2rem
+
+.crd--first, .crd--last
+  &::before
+    background-color: #DDEDF8 !important
+.crd--first
+  &::before
+    border-top-left-radius: 30px
+.crd--last
+  &::before
+    border-bottom-left-radius: 30px
+</style>

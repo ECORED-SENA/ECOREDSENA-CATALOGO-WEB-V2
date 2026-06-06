@@ -1,0 +1,66 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    ImagenInfografica.color-acento-botones.mb-4
+      template(v-slot:imagen)
+        figure
+          img(src='@/assets/curso/temas/ejm.png', alt='')
+      .tarjeta.row.img-infog.bg-white.align-items-center(x="50%" y="20%")
+        .col-md-4
+          img(src='@/assets/curso/temas/t13/tema1-5-ico1.svg', alt='')
+        .col-md-8.col-12.px-lg-4.px-3.py-1.contenido
+          p.mb-0 Conclusiones y recomendaciones siempre enfocadas al cumplimiento.
+      .tarjeta.row.img-infog.bg-white.align-items-center(x="50%" y="55%")
+        .col-md-4
+          img(src='@/assets/curso/temas/t13/tema1-5-ico1.svg', alt='')
+        .col-md-8.col-12.px-lg-4.px-3.py-1.contenido
+          p.mb-0 Desviaciones en la ejecución de actividades conforme al plan.
+
+              
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({
+
+  }),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>
+
+<style lang="sass">
+.img-infog 
+  height: 120px
+  border-top-left-radius: 80px 
+  border-bottom-left-radius: 80px 
+  img 
+    width: 130%
+    position: absolute
+    left: -8%
+    max-width: 124%
+    bottom: 0%
+@media (max-width: $bp-max-md)
+  .img-infog 
+    height: auto
+  .img-infografica__card
+    width: 220px
+    .contenido
+      width: 100%
+  .img-infog img 
+    display: none
+    width: 0%
+  .bg-white
+    border-radius: 15px
+    border: 2px solid #2D54FE
+    padding: 10px
+</style>

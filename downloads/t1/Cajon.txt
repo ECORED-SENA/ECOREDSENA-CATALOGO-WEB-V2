@@ -1,0 +1,34 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    .row
+      .col-lg-5
+        .cajon.color-acento-contenido.p-4
+          .h5 Cajón texto color
+          p.mb-0 Se puede usar dos o más columnas para diagramar el texto, estos elementos pueden presentar contenedores que permitan diferenciar ideas o conceptos.
+      .col-lg-7
+        //- .cajon-b debe ir acompañado de una de una de estas clases => 
+        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+        //- .arriba-derecha, .abajo-derecha, .abajo-izquierda (arriba-izquierda esta por defecto)
+        .cajon-b.color-primario.p-3.mb-5
+          p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel porta justo. Praesent congue nibh a justo ornare, eget vulputate nisl eleifend. Cras interdum finibus lacinia. Fusce dignissim sapien sit amet orci imperdiet, pharetra maximus nisi ullamcorper. Aliquam interdum elit ac nisi viverra, ultrices finibus est ultricies. Fusce tincidunt velit nulla. Aliquam eleifend libero eu neque rhoncus, sed placerat mi ornare.
+
+          
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({}),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>

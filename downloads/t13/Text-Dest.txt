@@ -1,0 +1,55 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    .bg-carrousel.d-flex.justify-content-center.align-items-center.mb-4(@mouseover="mostrarIndicador = false")
+      .indicador--hover(v-if="mostrarIndicador")
+      h2.h1.text-center.text-white Importante
+      .bg-carrousel_content.px-5.py-5.justify-content-center.d-flex.align-items-center
+        .text-center.w-75
+          p.fw-bold.mb-0 This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+
+
+              
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({
+    mostrarIndicador: true,
+  }),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>
+
+<style lang="sass">
+.bg-carrousel
+  cursor: pointer
+  position: relative
+  background-image: url('../assets/curso/temas/t13/importante.svg') //Enlace imagen de fondo
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  width: 100%
+  min-height: 207px
+  overflow: hidden
+  &:hover
+    .bg-carrousel_content
+      left: 0
+  &_content
+    width: 100%
+    background-color: #ffe799
+    transition: left .3s ease-in-out
+    position: absolute
+    height: 100%
+    left: 150%
+</style>

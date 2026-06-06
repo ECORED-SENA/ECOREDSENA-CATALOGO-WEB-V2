@@ -1,0 +1,51 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    h3.titulo-tercero Fade
+    .row.mb-5
+      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+        .tarjeta.color-primario.text-center.p-3(data-aos="fade")
+          h3.mb-0 fade
+      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+        .tarjeta.color-secundario.text-center.p-3(data-aos="fade-up")
+          h3.mb-0 fade-up
+      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+        .tarjeta.color-acento-contenido.text-center.p-3(data-aos="fade-down")
+          h3.mb-0 fade-down
+      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+        .tarjeta.color-acento-botones.text-center.p-3(data-aos="fade-left")
+          h3.mb-0 fade-left
+      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+        .tarjeta.color-primario.text-center.p-3(data-aos="fade-right")
+          h3.mb-0 fade-right
+      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+        .tarjeta.color-secundario.text-center.p-3(data-aos="fade-up-right")
+          h3.mb-0 fade-up-right
+      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+        .tarjeta.color-acento-contenido.text-center.p-3(data-aos="fade-up-left")
+          h3.mb-0 fade-up-left
+      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+        .tarjeta.color-acento-botones.text-center.p-3(data-aos="fade-down-right")
+          h3.mb-0 fade-down-right
+      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+        .tarjeta.color-primario.text-center.p-3(data-aos="fade-down-left")
+          h3.mb-0 fade-down-left
+
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({}),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>

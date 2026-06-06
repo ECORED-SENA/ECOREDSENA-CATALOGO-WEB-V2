@@ -1,0 +1,144 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    .row.justify-content-center(data-aos="fade-down")
+      .col-lg-5.col-md-6.mb-3.mb-md-0
+        .content-card4(@mouseover="mostrarIndicador = false")
+          .indicador--hover(v-if="mostrarIndicador")
+          .content-overlay
+          .btn-numero.btn-bottom-right
+            h3 A
+          img(src="@/assets/curso/temas/ejm.png", alt="") 
+          .tarjeta-details.fadeIn-top.p-1
+            h3 Titulo
+            p Constituyen sus mejores y principales elementos, que les permite cumplir con sus objetivos.
+            p Ejemplos: cuáles son mis ventajas, qué hacemos bien.
+      .col-lg-5.col-md-6.mb-3.mb-md-0
+        .content-card4
+          .content-overlay
+          .btn-numero.btn-bottom-left
+            h3 B
+          img(src="@/assets/curso/temas/ejm.png", alt="") 
+          .tarjeta-details.fadeIn-top.p-1
+            h3.text-right Titulo
+            p Son los aspectos negativos de la organización-proyecto que, si no se superan, podrán afectar el desarrollo del mismo.
+            p Ejemplos: qué podría ser mejorado, qué se está haciendo mal, qué podría ser evitado. 
+    
+
+              
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({
+    mostrarIndicador: true,
+  }),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>
+
+<style lang="sass">
+.cursor-pointer .content-card4
+  cursor: pointer  
+.content-card4
+  position: relative
+  margin: auto
+  height: 440px
+.content-card4 .content-overlay
+  background: #D3D3D3
+  position: absolute
+  left: 0
+  top: 0
+  bottom: 10%
+  right: 0
+  opacity: 0
+  -webkit-transition: all 0.4s ease-in-out 0s
+  -moz-transition: all 0.4s ease-in-out 0s
+  transition: all 0.4s ease-in-out 0s
+.content-card4:hover .content-overlay
+  opacity: 1
+.content-card4:hover .btn-numero h3
+  color: #00104E !important
+  background-color: #FFCA00
+  -webkit-transition: all 0.3s ease-in-out 0s
+  -moz-transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s
+.content-card4 img
+  z-index: 0
+  object-fit: cover
+  object-position: center center
+  height: 90%
+.tarjeta-details
+  position: absolute
+  padding-left: 1em
+  padding-right: 1em
+  width: 90%
+  top: 50%
+  left: 50%
+  opacity: 0
+  -webkit-transform: translate(-50%, -50%)
+  -moz-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+  -webkit-transition: all 0.3s ease-in-out 0s
+  -moz-transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s
+.tarjeta-details p
+  line-height: 1.3
+.content-card4:hover .tarjeta-details
+  top: 49%
+  opacity: 1
+.fadeIn-top
+  top: 20%
+.btn-numero h3
+  font-size: 35px
+  position: absolute
+  background-color: #2D54FE
+  color: #FFF
+  width: 60px
+  height: 60px
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  z-index: 9999
+  -webkit-transition: all 0.3s ease-in-out 0s
+  -moz-transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s
+.btn-numero h3:hover
+  color: #00104E !important
+  background-color: #FFCA00
+  -webkit-transition: all 0.3s ease-in-out 0s
+  -moz-transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s
+.btn-numero.btn-bottom-right h3
+  right: 0%
+  bottom: 4%
+.btn-numero.btn-bottom-left h3
+  left: 0%
+  bottom: 4%
+.btn-numero.btn-top-right h3
+  right: 0%
+  top: 0%
+.btn-numero.btn-top-left h3
+  left: 0%
+  top: 0%
+@media screen and (max-width: 640px)
+  .content-card4:hover .tarjeta-details
+    top: 40%;
+  .btn-numero h3
+    left: 41% !important
+  .tarjeta-details 
+    width: 95% !important 
+  .content-card4:hover .tarjeta-details
+    top: 49%  
+</style>

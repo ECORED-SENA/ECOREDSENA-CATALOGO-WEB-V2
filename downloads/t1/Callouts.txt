@@ -1,0 +1,104 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+
+    .row.justify-content-center.align-items-center.mb-5
+          .col-12.col-sm-8.col-lg-4
+              img(src='@/assets/curso/temas/img1.svg').m-auto
+          .col-12.col-sm-12.col-lg-8
+            .callout-wrap
+              .callout-box.p-4.p-md-5
+                p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel porta justo. Praesent congue nibh a justo ornare, eget vulputate nisl eleifend. Cras interdum finibus lacinia. Fusce dignissim sapien sit amet orci imperdiet, pharetra maximus nisi ullamcorper. Aliquam interdum elit ac nisi viverra, ultrices finibus est ultricies. Fusce tincidunt velit nulla. Aliquam eleifend libero eu neque rhoncus, sed placerat mi ornare.
+
+    .row.justify-content-center.align-items-center.mb-5
+        .col-12.col-sm-12.col-lg-8
+          .callout-wrap-inverso
+            .callout-box-inverso.p-4.p-md-5
+              p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel porta justo. Praesent congue nibh a justo ornare, eget vulputate nisl eleifend. Cras interdum finibus lacinia. Fusce dignissim sapien sit amet orci imperdiet, pharetra maximus nisi ullamcorper. Aliquam interdum elit ac nisi viverra, ultrices finibus est ultricies. Fusce tincidunt velit nulla. Aliquam eleifend libero eu neque rhoncus, sed placerat mi ornare.
+        .col-12.col-sm-8.col-lg-4
+            img(src='@/assets/curso/temas/img1.svg').m-auto
+    
+</template>
+
+<script>
+export default {
+  components: {},
+  data: () => ({}),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>
+<style lang="sass">
+.callout-wrap
+  position: relative
+  padding-left: 22px
+  
+  @media screen and (max-width: $bp-min-lg)
+    padding-left: 0
+    padding-top: 30px
+
+  &-inverso
+    padding-left: 0
+    padding-right: 22px
+
+    @media screen and (max-width: $bp-min-lg)
+      padding-right: 0
+      padding-bottom: 30px
+
+.callout-box
+  position: relative
+  background-color: $color-primario
+  border-radius: 6px
+  overflow: visible
+  @media screen and (max-width: $bp-min-lg)
+      padding-top: 2.3rem !important;
+
+ 
+
+  &::before
+    content: ''
+    position: absolute
+    top: 50%
+    left: -22px
+    width: 44px
+    height: 44px
+    background-color: $color-primario
+    transform: translateY(-50%) rotate(45deg)
+
+    @media screen and (max-width: $bp-min-lg)
+        top: -18px
+        left: 50%
+        transform: translateX(-50%) rotate(45deg)
+  
+  &-inverso
+    background-color: $color-secundario
+    position: relative
+    border-radius: 6px
+    overflow: visible
+    @media screen and (max-width: $bp-min-lg)
+      padding-bottom: 2.3rem !important;
+
+
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      right: -20px
+      width: 44px
+      height: 44px
+      background-color: $color-secundario
+      transform: translateY(-50%) rotate(45deg)
+
+      @media screen and (max-width: $bp-min-lg)
+          top: 90%
+          left: 50%
+          transform: translateX(-50%) rotate(45deg)
+  
+</style>
